@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calendar.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calendar">
+
+    </div>
+    <script src="./Calendar.js"></script>
+    <script>
+        let calendar= new Calendar({
+            container: document.querySelector('.calendar'),
+            date : new Date('2018','05','01'),
+            onselect: function(date){
+                console.log(date);
+                
+            }
+        });
+    </script>
+</body>
+</html>
